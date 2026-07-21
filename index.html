@@ -1,53 +1,80 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ascent Health — Test the App</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+<title>Ascent Health — Get the App</title>
 <style>
- body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#F7EEE2;color:#145052;margin:0;display:flex;min-height:100vh;align-items:center;justify-content:center}
- .card{max-width:520px;margin:20px;background:#fff;border-radius:18px;padding:28px 24px;box-shadow:0 10px 30px rgba(14,60,61,.12)}
- .mark{width:48px;height:48px;border-radius:12px;background:#DBD886;color:#145052;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700;font-family:Georgia,serif}
- h1{font-family:Georgia,serif;font-size:1.7rem;margin:14px 0 4px} h2{font-size:1.08rem;margin:6px 0 2px}
+ :root{--spruce:#145052;--cream:#F7EEE2;--citron:#DBD886;--ink:#12312F;--muted:#6b8688;--line:#e2d9cb}
+ *{box-sizing:border-box}
+ body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;background:var(--cream);color:var(--spruce);margin:0;display:flex;min-height:100vh;align-items:center;justify-content:center}
+ .card{max-width:540px;width:100%;margin:20px;background:#fff;border-radius:18px;padding:28px 24px;box-shadow:0 10px 30px rgba(14,60,61,.12)}
+ .mark{width:48px;height:48px;border-radius:12px;background:var(--citron);color:var(--spruce);display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700;font-family:Georgia,serif}
+ h1{font-family:Georgia,serif;font-size:1.7rem;margin:14px 0 4px}
+ h2{font-size:1.06rem;margin:6px 0 2px}
  p{line-height:1.55;color:#3a5a5c}
- .btn{display:block;text-align:center;background:#145052;color:#fff;text-decoration:none;font-weight:700;padding:15px;border-radius:12px;margin:12px 0 6px;font-size:1.04rem}
- .box{border:1px solid #e2d9cb;border-radius:14px;padding:16px;margin:14px 0}
- .box.reco{border:2px solid #145052}
- .step{background:#F7EEE2;border-radius:10px;padding:10px 12px;margin:8px 0;font-size:.92rem}
- .muted{color:#6b8688;font-size:.88rem}
- .pill{display:inline-block;background:#DBD886;color:#145052;border-radius:999px;padding:2px 10px;font-size:.76rem;font-weight:700;letter-spacing:.04em;vertical-align:middle}
- .pill.best{background:#145052;color:#fff}
- .stores a{display:inline-block;border:1px solid #D3E6E2;border-radius:10px;padding:8px 12px;text-decoration:none;color:#145052;font-weight:600;font-size:.88rem;margin:4px 6px 0 0}
- code{background:#eef3f2;padding:2px 6px;border-radius:5px;font-size:.82rem;word-break:break-all}
- details{margin-top:6px} summary{cursor:pointer;font-weight:600;color:#145052}
+ .btn{display:block;text-align:center;background:var(--spruce);color:#fff;text-decoration:none;font-weight:700;padding:15px;border-radius:12px;margin:12px 0 6px;font-size:1.04rem}
+ .btn:focus-visible{outline:3px solid var(--citron);outline-offset:2px}
+ .box{border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+ .box.reco{border:2px solid var(--spruce)}
+ .step{background:var(--cream);border-radius:10px;padding:10px 12px;margin:8px 0;font-size:.93rem}
+ .muted{color:var(--muted);font-size:.88rem}
+ .pill{display:inline-block;background:var(--citron);color:var(--spruce);border-radius:999px;padding:2px 10px;font-size:.74rem;font-weight:700;letter-spacing:.04em;vertical-align:middle}
+ .pill.best{background:var(--spruce);color:#fff}
+ .status{display:flex;align-items:center;gap:8px;background:#eef5f3;border:1px solid #cfe3de;border-radius:10px;padding:10px 12px;font-size:.86rem;color:#2b5a55;margin-top:6px}
+ .dot{width:9px;height:9px;border-radius:50%;background:#2f9e6f;flex:0 0 auto}
+ footer{margin-top:18px;font-size:.78rem;color:var(--muted);text-align:center}
+ kbd{background:#eef3f2;border:1px solid #d7e3e1;border-bottom-width:2px;border-radius:5px;padding:1px 6px;font-size:.85em}
 </style></head><body>
 <div class="card">
  <div class="mark">A</div>
- <h1>Ascent Health — Beta</h1>
- <p>Test the Ascent Health patient app on your phone. <b>build 23</b>.</p>
+ <h1>Ascent Health — Get the App</h1>
+ <p>Book doctors, lab tests and health packages. Same live information as our website.</p>
+ <div class="status"><span class="dot" aria-hidden="true"></span><span><b>Always available.</b> These links work any time — nothing needs to be running.</span></div>
 
- <div class="box reco">
-  <h2><span class="pill best">ANDROID — RECOMMENDED</span> &nbsp;Auto-updating app</h2>
-  <p class="muted">Install <b>once</b>. After that, <b>every update arrives automatically</b> the next time you open the app — no re-downloading, no reinstalling, nothing to keep running.</p>
-  <a class="btn" href="https://github.com/micky3975-source/ascent-beta/releases/download/android-v23/ascent-health-beta-v23.apk">Install Ascent Health (Android) →</a>
-  <div class="step">Tap the file after it downloads → if asked, allow <b>"install from this source"</b> → Install → open <b>Ascent Health</b>. (Installs over any earlier build.)</div>
-  <div class="step">From now on: just <b>open the app</b> — the latest version loads itself. That's it.</div>
+ <div class="box reco" id="android-card">
+  <h2><span class="pill best">ANDROID</span> &nbsp;Install the app</h2>
+  <p class="muted">Install once. Updates then arrive <b>automatically</b> when you open the app — no re-downloading.</p>
+  <a class="btn" id="apk" href="https://github.com/micky3975-source/ascent-beta/releases/download/android-v23/ascent-health-beta-v23.apk">Download Ascent Health for Android →</a>
+  <div class="step">Open the downloaded file → if asked, allow <b>“install from this source”</b> → Install. It installs over any earlier version.</div>
+ </div>
+
+ <div class="box" id="ios-card">
+  <h2><span class="pill">IPHONE &amp; IPAD</span> &nbsp;Add to Home Screen</h2>
+  <p class="muted">Runs full-screen like an app, with the same live doctors, tests and prices. Nothing to install from the App Store.</p>
+  <a class="btn" href="https://ascent-health-website.vercel.app/">Open Ascent Health →</a>
+  <div class="step"><b>1.</b> Tap the button above (open it in <b>Safari</b>).</div>
+  <div class="step"><b>2.</b> Tap the <b>Share</b> icon at the bottom of Safari.</div>
+  <div class="step"><b>3.</b> Choose <b>“Add to Home Screen”</b> → <b>Add</b>.</div>
+  <div class="step">The Ascent Health icon now sits on your home screen and opens full-screen.</div>
+  <p class="muted">Tip: if this page opened in Chrome, tap <b>⋯ → Open in Safari</b> first — “Add to Home Screen” is a Safari feature.</p>
  </div>
 
  <div class="box">
-  <h2><span class="pill">IPHONE</span> &nbsp;Open via Expo Go</h2>
-  <p class="muted">iPhone uses Expo Go for now (a permanent App Store / TestFlight build needs an Apple Developer account).</p>
-  <div class="step"><b>Step 1 (one time).</b> Install the free <b>Expo Go</b> app from the App Store (link at the bottom).</div>
-  <div class="step"><b>Step 2.</b> Tap the button to open Ascent Health inside Expo Go.</div>
-  <a class="btn" href="exp://prison-outputs-alert-effect.trycloudflare.com">Open Ascent Health (iPhone) →</a>
-  <p class="muted">If the button doesn't open it: open <b>Expo Go</b> → <b>"Enter URL manually"</b> → paste:<br><code>exp://prison-outputs-alert-effect.trycloudflare.com</code><br>(secure form if needed: <code>https://prison-outputs-alert-effect.trycloudflare.com</code>)<br>The iPhone option needs the live test session running.</p>
+  <h2>Prefer the website?</h2>
+  <p class="muted">Everything also works in any browser, on any device.</p>
+  <a class="btn" style="background:#2b6b6d" href="https://ascent-health-website.vercel.app/">Open in browser →</a>
  </div>
 
- <div class="box">
-  <h2>🟢 iPhone testers: get Expo Go first</h2>
-  <p class="muted">One-time install, then use "Open Ascent Health (iPhone)" above.</p>
-  <div class="stores">
-    <a href="https://apps.apple.com/app/expo-go/id982107779"> Expo Go — App Store (iPhone)</a>
-    <a href="https://play.google.com/store/apps/details?id=host.exp.exponent">▶ Expo Go — Google Play (Android, optional)</a>
-  </div>
- </div>
+ <footer>Ascent Health · Baridhara, Dhaka · <span id="ver">app build 23</span></footer>
 </div>
+<script>
+ // Platform-aware ordering: put the relevant option first. Progressive enhancement only —
+ // every option stays visible and usable if this script does not run.
+ (function(){
+   try{
+     var ua = navigator.userAgent || "";
+     var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+     var isAndroid = /Android/.test(ua);
+     var card = document.querySelector(".card");
+     var ios = document.getElementById("ios-card");
+     var android = document.getElementById("android-card");
+     if (isIOS && ios && android) { ios.classList.add("reco"); android.classList.remove("reco"); card.insertBefore(ios, android); }
+     else if (isAndroid && android) { android.classList.add("reco"); }
+     // cache-bust the APK link so a stale CDN copy of this page can never pin an old build
+     var apk = document.getElementById("apk");
+     if (apk) { apk.href = apk.href + "?v=" + Date.now(); }
+   }catch(e){ /* links remain fully usable without JS */ }
+ })();
+</script>
 </body></html>
